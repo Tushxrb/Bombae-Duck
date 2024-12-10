@@ -1,64 +1,144 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "italiana", sans-serif;
-    box-sizing: border-box;
-  }
+  font-family: "italiana", sans-serif;
+  box-sizing: border-box;
+}
 
-  body {
-    background: #010203;
-    color: #fff;
-  }
+body {
+  background: #010203;
+  color: #fff;
+  min-height: 100vh;
+}
 
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-  nav ul li {
-    display: inline-block;
-    list-style: none;
-    margin: 10px 20px;
-  }
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
 
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-  }
-  
-  .logo {
-    width: 300px;
-    margin-left: 50px;
-  }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
 
-  #sidemenu.a:hover{
-    font-size: 20px;
-    color: yellow;
-  }
+.logo {
+  width: 300px;
+  margin-left: 50px;
+}
 
-  /* body */
+html {
+  scroll-behavior: smooth;
+}
 
-  .body{
-    text-align: center;
-    margin-top: 50px;
-  }
+/* body */
 
-  p body{
-    margin: 50px;
-  }
+.body {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
-  .column {
-    float: left;
-    width: 50%;
-    padding: 5px;
-  }
+p body {
+  margin: 50px;
+}
 
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.login {
+  background-color: gold;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 12px;
+  padding-right: 12px;
+  border-radius: 5px;
+}
+
+@keyframes blink-bg {
+  0% {
+    background-color: gold;
   }
+  50% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: gold;
+  }
+}
+
+.reserve {
+  background-color: gold;
+  border-radius: 5px;
+  padding: 7px;
+  text-decoration: none;
+  color: white;
+  animation: blink-bg 2s infinite;
+}
+
+.p {
+  margin-bottom: 50px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  background-color: #010203;
+}
+
+
+/* footer */
+
+footer {
+  margin: 0;
+  padding: 0px;
+  color: #f0f9ff;
+  background-color: #282d32;
+}
+
+footer h1 {
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.address,
+.social-media {
+  width: 35%;
+}
+
+.social-media a {
+  color: gold;
+}
+
+.copyright {
+  background-color: gold;
+  margin: 0;
+  padding: 2px;
+}
